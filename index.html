@@ -1,101 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
+
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Scary Movie Trivia Game</title>
+
+	<!-- CSS Sheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	 <!-- jQuery -->
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
 
 
 </head>
+
 <body>
 
-
-	<h1>Trivia Game: Scary Movie Edition</h1>
-
-<div id="container">
-	<div id="timer"><h2>120 seconds remaining</h2></div>
-	<form id ="quiz" name = "quiz">
-
-	<p> 1.) Halloween H20 features a cast member from Psycho. Who is it?</p>
-	<input type = "radio" button id = "mc" name = "question1" value = "Anthony Perkins"> Anthony Perkins
-	<input type = "radio" button id = "mc" name = "question1" value = "Jamie Lee Curtis"> Jamie Lee Curtis
-	<input type = "radio" button id = "mc" name = "question1" value = "Norman Bates"> Norman Bates
-	<input type = "radio" button id = "mc" name = "question1" value = "Janet Leigh"> Janet Leigh 
-
-	<p> 2.) What is Michael Myers middle name? </p>
-
-	<input type = "radio" button id = "mc" name = "question2" value = "Audrey"> Audrey 
-	<input type = "radio" button id = "mc" name = "question2" value = "William"> William 
-	<input type = "radio" button id = "mc" name = "question2" value = "Anthony"> Anthony 
-	<input type = "radio" button id = "mc" name = "question2" value = "Thomas"> Thomas 
-
-	<p> 3.) In the "Friday the 13th" films, which state houses the Camp Crystal Lake? </p>
-
-	<input type = "radio" button id = "mc" name = "question3" value = "New Mexico"> New Mexico 
-	<input type = "radio" button id = "mc" name = "question3" value = "New Hampshire"> New Hampshire 
-	<input type = "radio" button id = "mc" name = "question3" value = "New England"> New England 
-	<input type = "radio" button id = "mc" name = "question3" value = "New Jersey"> New Jersey 
-
-	<p> 4.) Which of the following slashers has accumulated the highest body count? </p>
-
-	<input type = "radio" button id = "mc" name = "question4" value = "Freddy Krueger"> Freddy Krueger
-	<input type = "radio" button id = "mc" name = "question4" value = "Michael Myers"> Michael Myers
-	<input type = "radio" button id = "mc" name = "question4" value = "Jason Voorhees"> Jason Voorhees
-	<input type = "radio" button id = "mc" name = "question4" value = "Leatherface"> Leatherface
-
-	<p> 5.) Who was the killer in the original "Friday the 13th" movie? </p>
-
-	 <input type = "radio" button id = "mc" name = "question5" value = "Jason Voorhees"> Jason Voorhees
-	 <input type = "radio" button id = "mc" name = "question5" value = "Alice"> Alice
-	 <input type = "radio" button id = "mc" name = "question5" value = "Mrs. Voorhees"> Mrs. Voorhees
-	 <input type = "radio" button id = "mc" name = "question5" value = "Jason's Dad"> Jason's Dad 
-
-	 <p> 6.) Which horror legend survives in "Freddy vs. Jason"? </p>
-	 <input type = "radio" button id = "mc" name = "question6" value = "Freddy"> Freddy
-	 <input type = "radio" button id = "mc" name = "question6" value = "Jason"> Jason
-	 <input type = "radio" button id = "mc" name = "question6" value = "Both"> Both
-	 <input type = "radio" button id = "mc" name = "question6" value =	"Neither"> Neither
-
-	 <p> 7.) In the "Childs Play" movies, what is the name of the boy that the killer repeatedly attempts to possess?</p>
-	 <input type = "radio" button id = "mc" name = "question7" value = "Andrew"> Andrew
-	 <input type = "radio" button id = "mc" name = "question7" value = "Andy"> Andy
-	 <input type = "radio" button id = "mc" name = "question7" value = "Charlie"> Charlie
-	 <input type = "radio" button id = "mc" name = "question7" value = "Robbie"> Robbie
-
-	 <p> 8.) What year was the first "Nightmare on Elm Street" movie released? </p>
-
-	 <input type = "radio" button id = "mc" name = "question8" value = "1985"> 1985
-	 <input type = "radio" button id = "mc" name = "question8" value = "1982"> 1982
-	 <input type = "radio" button id = "mc" name = "question8" value = "1987"> 1987
-	 <<input type = "radio" button id = "mc" name = "question8" value = "1984"> 1984        
-
-	 <p> 9.) In "Childs Play" what is "Chucky's" real name?</p>
-
-	 <input type = "radio" button id = "mc" name = "question9" value = "Charles Lee Ray"> Charles Lee Ray
-	 <input type = "radio" button id = "mc" name = "question9" value = " Charles Lee Roy"> Charles Lee Roy
-	 <input type = "radio" button id = "mc" name = "question9" value = " Charles Chuckster Rayson"> Charles "Chuckster" Rayson
-	 <input type = "radio" button id = "mc" name = "question9" value = "Charles Leroy"> Charles Leroy
-
-	 <p> 10.) Who plays Freddy Krueger in the original "Nightmare on Elms Street" movies? </p>
-
-	 <input type = "radio" button id = "mc" name = "question10" value = "Kurt Russell"> Kurt Russell
-	 <input type = "radio" button id = "mc" name = "question10" value = "Brian Yuzna"> Brian Yuzna
-	 <input type = "radio" button id = "mc" name = "question10" value = "Keith Davids"> Keith Davids
-	 <input type = "radio" button id = "mc" name = "question10" value = "Robert Englund"> Robert Englund
- 
- 	</br>
- 	</br>
- 	
- 	 <input type="submit" value="Submit">
-
-</form>
-
-
-</div>
+	<div id="wrapper">
+      <h1>Totally Trivial Trivia!</h1>
+      <div id="sub-wrapper">
+        <div id="quiz-area">
+          <button id="start">Start</button>
+        </div>
+      </div>
+    </div>
+	
 
 
 <script type="text/javascript" src="assets/javascript/app.js"></script>
 	
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
 </body>
 </html>
